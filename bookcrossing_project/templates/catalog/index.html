@@ -7,9 +7,10 @@
     <div class="container">
         <h1 class="mt-5">Список книг</h1>
         <div class="row mt-4">
-            {% include 'includes/book_card.html' %}
-            <!-- Repeat the above card for other books -->
-            
+            {% for book in books %}
+                {% include 'includes/book_card.html' %}
+            {% endfor %}
+
         </div>
     </div>
 {% endblock content %}
